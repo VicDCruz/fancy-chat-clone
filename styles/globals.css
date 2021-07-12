@@ -5,10 +5,16 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply text-black;
+  }
   h1 {
     @apply font-light text-4xl tracking-wider;
   }
   h2 {
     @apply font-medium text-2xl tracking-wide;
+  }
+  .caption {
+    @apply font-medium text-xs tracking-wide;
   }
 }
