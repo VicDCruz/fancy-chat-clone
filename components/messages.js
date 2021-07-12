@@ -1,8 +1,13 @@
 import React from 'react';
+import Header from './messages/header';
+import History from './messages/history';
+import MessageBox from './messages/messageBox';
 
 const Messages = () => (
-  <div>
-    <h1>Hello, world!</h1>
+  <div className="relative">
+    <Header />
+    <History />
+    <MessageBox />
   </div>
 );
 
