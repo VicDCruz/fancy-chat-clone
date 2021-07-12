@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   return (
     <div className="h-screen">
-      <div className="flex h-full p-3 gap-">
+      <div className="flex h-full p-3 gap-2">
         <div className="flex-none h-full w-1/4">
           <Chats />
         </div>
