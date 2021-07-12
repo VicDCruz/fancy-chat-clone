@@ -17,4 +17,15 @@
   .caption {
     @apply font-medium text-xs tracking-wide;
   }
+  input {
+    @apply bg-transparent focus:outline-none caption w-full
+  }
+  input:hover {
+    @apply bg-transparent focus:outline-none caption w-full ring
+  }
+}
+
+.glass {
+  background: rgba(251, 250, 249, 0.56);
+  backdrop-filter: blur(4px);
 }

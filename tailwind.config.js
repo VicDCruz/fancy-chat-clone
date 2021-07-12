@@ -8,7 +8,10 @@ module.exports = {
       sans: ['Poppins', 'Arial', 'sans-serif'],
     },
     colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
       black: '#202526',
+      white: colors.white,
       gray: colors.gray,
       red: colors.red,
       primary: {
