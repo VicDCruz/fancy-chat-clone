@@ -8,7 +8,7 @@ const ICON_SIZES = {
   big: 'h-9 w-9',
 };
 
-const colors = {
+const COLORS = {
   default: {
     background: 'bg-transparent',
     backgroundHover: 'bg-gray-300',
@@ -42,7 +42,7 @@ const Icon = ({
   disablePadding = false,
   disableBackground = false,
 }) => {
-  const colorInfo = colors[color];
+  const colorInfo = COLORS[color];
   const paddingSizes = { small: 'p-1', regular: 'p-2', big: 'p-3' };
   const background = !disableBackground
     ? `hover:${colorInfo.backgroundHover} ${colorInfo.background}`
@@ -59,10 +59,9 @@ const Icon = ({
 };
 
 Icon.propTypes = {
-  color: PropTypes.oneOf(['default', 'primary', 'secondary', 'tertiary']),
-  type: PropTypes.oneOf(['basic', 'folder', 'photo', 'plus', 'search'])
-    .isRequired,
-  size: PropTypes.oneOf(['regular', 'small', 'big']),
+  color: PropTypes.oneOf(Object.keys(COLORS)),
+  type: PropTypes.oneOf(Object.keys(icons)).isRequired,
+  size: PropTypes.oneOf(Object.keys(ICON_SIZES)),
   disablePadding: PropTypes.bool,
   disableBackground: PropTypes.bool,
 };
