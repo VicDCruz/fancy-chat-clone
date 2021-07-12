@@ -19,7 +19,7 @@ const Chats = props => (
     </div>
     <ListChats
       chats={Array.from(Array(13), (_, index) => index + 1).map(element => ({
-        username: element,
+        username: `${element}`,
         imageUrl: '', // Math.random() > 0.5 ? 'https://picsum.photos/200' : '',
         description: `Descripción - ${element}`,
       }))}
