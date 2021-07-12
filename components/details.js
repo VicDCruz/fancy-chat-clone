@@ -2,6 +2,7 @@ import React from 'react';
 import Icon from './icon';
 import User from './user';
 import Divider from './divider';
+import FileTypes from './details/fileTypes';
 
 const Details = () => (
   <div className="flex flex-col gap-3">
@@ -16,6 +17,7 @@ const Details = () => (
       orientation="vertical"
       size="big"
     />
+    <FileTypes />
   </div>
 );
 
