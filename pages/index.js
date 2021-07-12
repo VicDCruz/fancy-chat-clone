@@ -9,13 +9,13 @@ export default function Home() {
   return (
     <div className="h-screen">
       <div className="flex h-full p-3 gap-2">
-        <div className="flex-none h-full w-1/4">
+        <div className="flex-none h-full overflow-y-auto w-1/4">
           <Chats />
         </div>
-        <div className="flex-grow h-full rounded-lg bg-gray-100">
+        <div className="flex-grow max-h-full overflow-y-auto rounded-lg bg-gray-100">
           <Messages />
         </div>
-        <div className="flex-none h-full w-1/4">
+        <div className="flex-none h-full overflow-y-auto w-1/4">
           <Details />
         </div>
       </div>
