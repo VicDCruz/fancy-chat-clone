@@ -14,13 +14,18 @@ const Chats = props => (
         <h2>Chat</h2>
       </div>
       <Divider />
-      <User name="Víctor Cruz" size="big" orientation="vertical" />
+      <User
+        name="Víctor Cruz"
+        size="big"
+        orientation="vertical"
+        imageUrl={`/api/image?random=${Math.round(Math.random() * 100)}`}
+      />
       <SearchBar onSearch={text => console.log(text)} />
     </div>
     <ListChats
       chats={Array.from(Array(13), (_, index) => index + 1).map(element => ({
         username: `${element}`,
-        imageUrl: '', // Math.random() > 0.5 ? 'https://picsum.photos/200' : '',
+        imageUrl: `/api/image?random=${Math.round(Math.random() * 100)}`,
         description: `Descripción - ${element}`,
       }))}
     />

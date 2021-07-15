@@ -16,6 +16,7 @@ const Details = () => (
       description="10 members"
       orientation="vertical"
       size="big"
+      imageUrl={`/api/image?random=${Math.round(Math.random() * 100)}`}
     />
     <FileTypes />
   </div>
