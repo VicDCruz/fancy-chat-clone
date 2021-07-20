@@ -18,7 +18,7 @@ const Chats = props => (
         name="Víctor Cruz"
         size="big"
         orientation="vertical"
-        imageUrl={`/api/image?random=${Math.round(Math.random() * 100)}`}
+        imageUrl={`/api/image`}
       />
       <SearchBar onSearch={text => console.log(text)} />
     </div>
